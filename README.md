@@ -35,13 +35,22 @@ Taskello is a full-stack task management web application inspired by Trello. It 
 taskello/
 │
 ├── client/ # React frontend
-│ ├── src/
+│ ├── public/ # Static files
+│ ├── src/ # React source code
+│ │ ├── components/ # Reusable UI components
+│ │ ├── pages/ # Page-level components
+│ │ ├── App.js # Main App component
+│ │ ├── index.js # Entry point
+│ │ └── styles/ # CSS files
 │ └── package.json
 │
 ├── server/ # Node.js backend
-│ ├── server.js
+│ ├── server.js # Main server file
+│ ├── routes/ # API routes (if present)
+│ ├── db/ # Database files
 │ └── package.json
 │
+├── .gitignore
 └── README.md
 
 ---

@@ -32,27 +32,26 @@ Taskello is a full-stack task management web application inspired by Trello. It 
 ---
 
 ## 📂 Project Structure
+t## Project Structure
+
+```text
 taskello/
 ├── client/                # React frontend
-│   ├── public/            # Static assets (HTML, favicon, etc.)
+│   ├── public/            # Static files
 │   ├── src/               # React source code
-│   │   ├── components/    # Reusable UI components (Buttons, Inputs, Cards)
-│   │   ├── pages/         # Page-level components (Dashboard, Login, Home)
-│   │   ├── App.js         # Main App component & Routing
-│   │   ├── index.js       # React entry point
-│   │   └── styles/        # Global and component-specific CSS
-│   └── package.json       # Frontend dependencies and scripts
-│
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/         # Page-level components
+│   │   ├── App.js         # Main App component
+│   │   ├── index.js       # Entry point
+│   │   └── styles/        # CSS files
+│   └── package.json
 ├── server/                # Node.js backend
-│   ├── server.js          # Express server entry point
-│   ├── routes/            # API endpoints and route logic
-│   ├── db/                # Database connection and models
-│   └── package.json       # Backend dependencies and scripts
-│
-├── .gitignore             # Files to exclude from Git (node_modules, .env)
+│   ├── server.js          # Main server file
+│   ├── routes/            # API routes
+│   ├── db/                # Database configuration/models
+│   └── package.json
+├── .gitignore             # Ignored files (node_modules, .env, etc.)
 └── README.md              # Project documentation
-
----
 
 ## ⚙️ Installation & Setup
 

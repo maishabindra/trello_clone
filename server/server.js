@@ -4,10 +4,13 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 10000;
 
 app.use(cors());
 app.use(express.json());
+app.get('/', (req, res) => {
+  res.send('🚀 Taskello Backend is Running!');
+});
 
 // ── Database Setup ─────────────────────────────────────────────
 const db = new Database(path.join(__dirname, 'taskello.db'));
@@ -362,6 +365,5 @@ app.get('/api/search', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🚀 Taskello backend running on http://localhost:${PORT}`);
-  console.log(`   API available at http://localhost:${PORT}/api\n`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });

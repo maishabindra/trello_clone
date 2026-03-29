@@ -11,6 +11,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('🚀 Taskello Backend is Running!');
 });
+app.get('/api', (req, res) => {
+  res.json({ message: "API is working ✅" });
+});
 
 // ── Database Setup ─────────────────────────────────────────────
 const db = new Database(path.join(__dirname, 'taskello.db'));
